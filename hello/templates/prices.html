@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{%block title%}Prices
+{%endblock title%}
+{%block body%}
+<div class ="container">
+
+    <div class="container py-3">
+        <header>
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+              
+              <span class="fs-4">Pricing List</span>
+            </a>
+      
+  
+          </div>
+      
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Pricing</h1>
+            
+          </div>
+        </header>
+      
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Triund  Trek</h4>
+                </div>
+                <div class="card-body">
+                    <img src="/static/img/13.jfif" class="d-block w-100" alt="...">
+                  <h1 class="card-title pricing-card-title">$2<small class="text-muted fw-light">person</small></h1>
+                  
+                  
+                  <button type="button" class="w-100 btn btn-outline-dark"><a href='/book' >Book Now</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Bir Billing</h4>
+                </div>
+                <div class="card-body">
+                    <img src="/static/img/13.jfif" class="d-block w-100" alt="...">
+                  <h1 class="card-title pricing-card-title">$5<small class="text-muted fw-light">person</small></h1>
+                  
+                  <button type="button" class="w-100 btn btn-primary" style="--bs-btn-hover-bg: black;"><a href='/book'style="color:white;">Book now</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Maclodganj Pack</h4>
+                </div>
+                <div class="card-body">
+                    <img src="/static/img/13.jfif" class="d-block w-100" alt="...">
+                  <h1 class="card-title pricing-card-title">$10<small class="text-muted fw-light">person</small></h1>
+                  
+                  <button type="button" class="w-100 btn btn-primary" style="--bs-btn-hover-bg: black; "><a href='/book' style="color:white;">Book Now</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          
+        </main>
+      <div class="container"  style="margin-left: 0px;margin-right:0px;
+      background-color: slategrey;
+      font-family: cursive;
+      background-color: black;
+      color: gainsboro; ">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+   
+            <div class="col-6 col-md">
+              <h5>Features</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Resources</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>About</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+</div>
+</div>
+{%endblock body%}

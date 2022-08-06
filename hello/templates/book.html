@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{%block title%}Booking
+{%endblock title%}
+{%block body%}
+
+<div class="container">
+<h1 class="text-center" style="margin-left: 0px;margin-right:-12px;
+background-color: slategrey;
+font-family: cursive;
+background-color: black;
+color: gainsboro; ">Booking here</h1></div>
+<div class="container mb-3 ">
+<form method='post' action="/book">
+{%csrf_token%}
+<div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" name="name" id="name" placeholder="Enter your Name">
+</div>
+<div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email">
+  </div>
+<div class="mb-3">
+    <label for="phone" class="form-label">Phone Number</label>
+    <input type="phone" class="form-control" name="phone" id="phone" placeholder="Enter your Phone Number">
+</div>
+
+  <div class="mb-3">
+    <label for="desc" class="form-label">Tell us if you want to add things according to you</label>
+    <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">Book Now</button>
+</form>
+  </div>
+{%endblock body%}
